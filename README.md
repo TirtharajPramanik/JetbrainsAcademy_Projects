@@ -7,9 +7,6 @@ parser.add_argument('--periods', type=int)
 parser.add_argument('--interest', type=float)
 parser.add_argument('--payment', type=int)
 args = parser.parse_args()
-
-
-
 try:
     p = args.principal
     n = args.periods
@@ -49,7 +46,6 @@ try:
                 pay = math.ceil((p * (i * pow((1 + i),n)) / (pow((1 + i), n) - 1)))
                 print('Your monthly payment = ', pay , '!')
                 print('Overpayment= ', (pay * n) - p)
-
     elif args.type == 'diff':
         if args.principal < 0:
             print('Incorrect parameters')
