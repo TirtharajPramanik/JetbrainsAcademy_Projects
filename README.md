@@ -1,4 +1,3 @@
-# Project-LOan Calcutor
 import argparse, math
 parser = argparse.ArgumentParser()
 parser.add_argument('--type', choices = ['annuity', 'diff'])
